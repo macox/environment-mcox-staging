@@ -11,6 +11,7 @@ controllerworkflow:
   enabled: false
 docker-registry:
   enabled: false
+dockerRegistry: gcr.io
 expose:
   Annotations:
     helm.sh/hook: post-install,post-upgrade
@@ -19,7 +20,7 @@ expose:
   - --v
   - 4
   config:
-    domain: 35.246.63.229.nip.io
+    domain: 35.246.86.8.nip.io
     exposer: Ingress
     http: "true"
 jenkins:
